@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+
+    mask-image: url(./ink.gif);
+    -webkit-mask-image: url(./ink.gif);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+
+.title {
+    font-size: 6em;
+}
